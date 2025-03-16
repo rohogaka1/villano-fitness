@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Logo from './Logo';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -22,9 +23,7 @@ export default function Header() {
     <header className="fixed inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between p-6 lg:px-8 bg-brand-black shadow-lg" aria-label="Global">
         <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <span className="text-2xl font-bold text-brand-gold hover:text-brand-gold-light transition-colors">Victoria Villano</span>
-          </Link>
+          <Logo className="-m-1.5 p-1.5" />
         </div>
         <div className="flex lg:hidden">
           <button
@@ -60,9 +59,7 @@ export default function Header() {
         <div className="fixed inset-0 z-50 bg-black/30 backdrop-blur-sm" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-brand-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-brand-gold/10">
           <div className="flex items-center justify-between">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="text-2xl font-bold text-brand-gold hover:text-brand-gold-light">Victoria Villano</span>
-            </Link>
+            <Logo className="-m-1.5 p-1.5" />
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-brand-gold hover:text-brand-gold-light"

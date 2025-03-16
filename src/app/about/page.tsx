@@ -6,8 +6,11 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       <Hero
-        title="About Victoria Villano"
-        description="With over 20 years of experience in fitness and wellness, Victoria has helped countless individuals achieve their health and fitness goals."
+        title="Meet Victoria Villano"
+        description="Dedicated to transforming lives through fitness for over two decades. My passion is helping you discover your strength and achieve your goals through personalized attention and expert guidance."
+        backgroundImage="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=1920&h=1080&fit=crop"
+        ctaText="Let's Connect"
+        ctaHref="/contact"
       />
 
       <Section>

@@ -85,8 +85,11 @@ export default function ServicesPage() {
   return (
     <div className="bg-white">
       <Hero
-        title="Services & Pricing"
-        description="Transform your fitness journey with our comprehensive range of services. Whether you're just starting out or looking to take your fitness to the next level, we have the perfect program for you."
+        title="Personalized Fitness Solutions"
+        description="From one-on-one training to energetic group classes, discover programs tailored to your goals. Choose the path that best fits your journey to a healthier, stronger you."
+        backgroundImage="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=1920&h=1080&fit=crop"
+        ctaText="Explore Programs"
+        ctaHref="#services"
       />
 
       <Section>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "@/components/layout/Hero";
 
 const features = [
   {
@@ -31,44 +32,13 @@ const features = [
 export default function Home() {
   return (
     <div className="bg-white">
-      {/* Hero section */}
-      <div className="relative">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative z-10 pt-14 lg:w-full lg:max-w-2xl">
-            <div className="relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0">
-              <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
-                <h1 className="text-4xl font-bold tracking-tight text-brand-black sm:text-6xl">
-                  Transform Your Life with Victoria Villano
-                </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-700">
-                  Expert fitness training, energetic Zumba classes, and personalized wellness programs designed to help you achieve your health and fitness goals.
-                </p>
-                <div className="mt-10 flex items-center gap-x-6">
-                  <Link
-                    href="/book"
-                    className="rounded-md bg-brand-gold px-3.5 py-2.5 text-sm font-semibold text-brand-black shadow-sm hover:bg-brand-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-gold"
-                  >
-                    Book a Session
-                  </Link>
-                  <Link href="/about" className="text-sm font-semibold leading-6 text-brand-black hover:text-brand-gold">
-                    Learn more <span aria-hidden="true">→</span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <div className="relative h-full">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            <img
-              className="aspect-[3/2] w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
-              src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?w=1920&h=1080&fit=crop"
-              alt="Fitness Training"
-            />
-          </div>
-        </div>
-      </div>
+      <Hero
+        title="Elevate Your Fitness Journey"
+        description="Transform your life with expert fitness training, energetic Zumba classes, and personalized wellness programs. Experience the difference with Victoria Villano's signature approach."
+        backgroundImage="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=1920&h=1080&fit=crop"
+        ctaText="Start Your Journey"
+        ctaHref="/book"
+      />
 
       {/* Features section */}
       <div className="mx-auto mt-32 max-w-7xl px-6 pb-24 sm:mt-40 sm:pb-32 lg:px-8">
